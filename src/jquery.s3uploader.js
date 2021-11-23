@@ -187,8 +187,8 @@
         }
 
         // Form Data
-        var fd = new FormData();
-        fd.append(File.settings.fieldName, File.data);
+        //var fd = new FormData(); //stackoverflow.com/a/57689819/3573075
+        var fd = File.data;
 
         File.status = FileStatus.UPLOADING;
         File.widget.activeFiles++;
